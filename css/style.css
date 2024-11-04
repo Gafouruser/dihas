@@ -112,6 +112,22 @@ h6,
   color: var(--dark) !important;
 }
 
+.navbar-light #logo-blanc{
+  display: inline;
+}
+
+.navbar-light #logo-color{
+  display: none;
+}
+
+.sticky-top.navbar-light #logo-color {
+  display: inline;
+}
+
+.sticky-top.navbar-light #logo-blanc {
+  display: none;
+}
+
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
   color: var(--secondary) !important; 
@@ -552,11 +568,6 @@ h6,
 
 /* mes styles */
 
-.spinner-size {
-  width: 3rem;
-  height: 3rem;
-}
-
 .justfy {
   text-align: justify;
 }
@@ -566,12 +577,15 @@ body {
 }
 
 .custom-btn {
-  background-color: #4caf50; /* Vert par exemple */
-  color: white; /* Pour changer la couleur du texte si nécessaire */
+  background-color: #4caf50; 
+  color: white; 
 }
 
 .primry {
     background: var(--primary);
-    /*background: rgba(17, 103, 53, 0.5); */
     z-index: 0;
+}
+
+.textpri {
+  color: var(--primary);
 }

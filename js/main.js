@@ -20,10 +20,20 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
             $('.navbar').addClass('sticky-top shadow-sm');
+            
         } else {
             $('.navbar').removeClass('sticky-top shadow-sm');
         }
     });
+    
+
+    /*$(window).scroll(function () {
+        if ($(this).scrollTop() > 45) {
+            $('#navbar').addClass('scrolled sticky-top shadow-sm');
+        } else {
+            $('#navbar').removeClass('scrolled sticky-top shadow-sm');
+        }
+    });*/
     
     
     // Back to top button
