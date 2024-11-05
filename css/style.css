@@ -605,3 +605,7 @@ body {
 .bgor {
   background: #fba504;
 }
+
+.bdrouge {
+  border: 1px red solid;
+}
