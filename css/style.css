@@ -589,3 +589,13 @@ body {
 .textpri {
   color: var(--primary);
 }
+
+.newsletter-input {
+  height: 48px;
+}
+
+.testimonial-img {
+  width: 65px;
+  height: 65px;
+}
+
