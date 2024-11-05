@@ -1,8 +1,8 @@
 /********** Template CSS **********/
 :root {
   --primary: #116735;
-  /*--secondary: #fba504;*/
   --secondary: #4bb84f;
+  --tertial: #fba504;
   --light: #f6f4f9;
   --dark: #04000b;
 }
@@ -130,7 +130,7 @@ h6,
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: var(--secondary) !important; 
+  color: var(--tertial) !important; 
 }
 
 .navbar-light .navbar-brand h1 {
@@ -426,7 +426,7 @@ h6,
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(98, 34, 204, 0.9);
+  background: rgba(251, 165, 4, 0.7);;
   transition: 0.5s;
   opacity: 0;
 }
@@ -594,8 +594,14 @@ body {
   height: 48px;
 }
 
-.testimonial-img {
-  width: 65px;
-  height: 65px;
+.hr-size {
+  width: 90px;
 }
 
+.textor {
+  color: #fba504;
+}
+
+.bgor {
+  background: #fba504;
+}
