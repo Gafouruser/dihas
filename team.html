@@ -46,13 +46,20 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-        <img src="img/logodihas-blanc.png" alt="Logo blanc" id="logo-blanc">
-        <img src="img/logodihas.png" alt="Logo coloré" id="logo-color" >
+                <a href="" class="navbar-brand p-0 d-flex align-items-center justify-content-center">
+                    <img src="img/logodihas-blanc.png" alt="Logo blanc" id="logo-blanc" class="d-none d-lg-block">
+                    <img src="img/logodihas.png" alt="Logo coloré" id="logo-color" class="d-none d-lg-block">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Ouvrir le menu de navigation">
-                    <span class="fa fa-bars"></span>
-                </button>
+
+                <div class="d-flex d-lg-none justify-content-between w-100">
+                    <a href="" class="navbar-brand p-0 d-lg-none">
+                        <img src="img/logodihas.png" alt="Logo secondaire" id="logo-secondary">
+                    </a>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Ouvrir le menu de navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                </div>
                 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
