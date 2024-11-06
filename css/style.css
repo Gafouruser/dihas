@@ -142,6 +142,10 @@ h6,
   color: var(--tertial) !important; 
 }
 
+.navbar-nav .nav-link.active {
+  color: var(--tertial) !important; 
+}
+
 .navbar-light .navbar-brand h1 {
   color: #ffffff;
 }
@@ -219,13 +223,13 @@ h6,
   }
 
   .navbar-light .btn {
-    color: var(--dark);
+    color: var(--tertial);
     background: #ffffff;
   }
 
   .sticky-top.navbar-light .btn {
-    color: var(--dark);
-    background: var(--secondary);
+    color: var(--light);
+    background: var(--tertial);
   }
 }
 

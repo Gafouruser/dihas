@@ -1,5 +1,5 @@
 (function ($) {
-    "use strict";
+    "use strict";  
 
     // Spinner
     var spinner = function () {
@@ -20,11 +20,11 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
             $('.navbar').addClass('sticky-top shadow-sm');
-            $('.dem').addClass('text-white')
+            $('.navmobile').addClass('fixed-top shadow-sm bg-white p-3'); 
             
         } else {
             $('.navbar').removeClass('sticky-top shadow-sm');
-            $('.dem').removeClass('text-white')
+            $('.navmobile').removeClass('fixed-top shadow-sm bg-white p-3');
         }
     });
     
@@ -93,5 +93,16 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
     
-})(jQuery);
+    // Ajout de la classe 'active' sur le lien de la page actuelle
+    const currentLocation = window.location.href;
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
+    navLinks.forEach(link => {
+        if (currentLocation.includes(link.href)) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+
+})(jQuery);
