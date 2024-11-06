@@ -112,6 +112,7 @@ h6,
   color: var(--dark) !important;
 }
 
+
 .navbar-light #logo-blanc {
   visibility: visible;
   opacity: 1;
@@ -123,6 +124,7 @@ h6,
   opacity: 0;
   transition: opacity 0.5s ease;
 }
+
 
 .sticky-top.navbar-light #logo-color {
   visibility: visible;
