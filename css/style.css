@@ -112,21 +112,28 @@ h6,
   color: var(--dark) !important;
 }
 
-.navbar-light #logo-blanc{
-  display: inline;
+.navbar-light #logo-blanc {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
-.navbar-light #logo-color{
-  display: none;
+.navbar-light #logo-color {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .sticky-top.navbar-light #logo-color {
-  display: inline;
+  visibility: visible;
+  opacity: 1;
 }
 
 .sticky-top.navbar-light #logo-blanc {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
+
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
