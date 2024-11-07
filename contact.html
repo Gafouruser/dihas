@@ -220,6 +220,43 @@
           emailjs.send("dihas_service_id", "dihas_template_id", params).then(
             function (response) {
               console.log("Réponse EmailJS: ", response);
+              showToast("success"); // Afficher le toast de succès
+            },
+            function (error) {
+              console.error("Erreur EmailJS: ", error);
+              showToast("error"); // Afficher le toast d'erreur
+            }
+          );
+        });
+
+      function showToast(type) {
+        let toastElement;
+        if (type === "success") {
+          toastElement = document.getElementById("toastSuccess");
+        } else if (type === "error") {
+          toastElement = document.getElementById("toastError");
+        }
+
+        if (toastElement) {
+          const toast = new bootstrap.Toast(toastElement);
+          toast.show();
+        }
+      }
+
+      /*document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+          };
+
+          emailjs.send("dihas_service_id", "dihas_template_id", params).then(
+            function (response) {
+              console.log("Réponse EmailJS: ", response);
               alert("Message envoyé avec succès !");
             },
             function (error) {
@@ -227,7 +264,33 @@
               alert("Une erreur est survenue lors de l'envoi du message.");
             }
           );
-        });
+        });*/
     </script>
+
+    <!-- Toast Notifications -->
+<div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1055;">
+  <!-- Toast de succès -->
+  <div id="toastSuccess" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        <i class="bi bi-check-circle-fill me-2"></i>
+        Message envoyé avec succès !
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+
+  <!-- Toast d'erreur -->
+  <div id="toastError" class="toast align-items-center text-white bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+        Une erreur est survenue lors de l'envoi du message.
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+
   </body>
 </html>
