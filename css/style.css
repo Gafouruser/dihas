@@ -49,6 +49,11 @@ h6,
 }
 
 /*** Button ***/
+
+.btn-light {
+  color: white;
+}
+
 .btn {
   font-weight: 500;
   transition: 0.5s;
@@ -56,6 +61,9 @@ h6,
 
 .btn:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: var(--tertial);
+  background: white;
+  border: 1px var(--tertial) solid;
 }
 
 .btn-square {
@@ -612,13 +620,9 @@ body {
 }
 
 .textor {
-  color: #fba504;
+  color: var(--tertial);
 }
 
 .bgor {
-  background: #fba504;
-}
-
-.bdrouge {
-  border: 1px red solid;
+  background: var(--tertial);
 }
