@@ -88,6 +88,20 @@
     portfolioIsotope.isotope({ filter: $(this).data("filter") });
   });
 
+  /*document.getElementById("read-more").addEventListener("click", function(event) {
+    event.preventDefault(); // Empêche l'action par défaut du lien
+
+    const moreContent = document.getElementById("more-content");
+    const offsetTop = moreContent.offsetTop;
+
+    // Défilement vers la position de l'élément ciblé
+    window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth"
+    });
+});*/
+
+
   function includeHTML() {
     const elements = document.querySelectorAll("[data-include]");
 
