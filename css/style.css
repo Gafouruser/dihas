@@ -440,6 +440,35 @@ h6,
   border-color: var(--secondary);
 }
 
+/***/
+.projet-item video {
+  transition: 0.5s;
+}
+
+.projet-item:hover video {
+  transform: scale(1.1);
+}
+
+.projet-item .projet-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(251, 165, 4, 0.7);;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.projet-item:hover .projet-overlay {
+  opacity: 1;
+}
+
+/*****/
+
 .portfolio-item img {
   transition: 0.5s;
 }
