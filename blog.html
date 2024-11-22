@@ -1,327 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>DIHA'S - Blog</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta
+  <head>
+    <meta charset="utf-8" />
+    <title>DIHA'S - Blog</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
       name="keywords"
       content="blog, marketing digital, transformation numérique, développement web, tendances numériques, articles, conseils, innovations, technologie"
-  />
-  <meta
+    />
+    <meta
       name="description"
       content="DIHA'S - Développement Numérique et Marketing Digital. Découvrez les articles sur le marketing digital, la transformation numérique, le développement web et les tendances innovantes de la technologie."
-  />
+    />
 
-  <!-- Favicon -->
-  <link href="img/logodihas-fav.png" rel="icon">
+    <!-- Favicon -->
+    <link href="img/logodihas-fav.png" rel="icon" />
 
-  <!-- Google Web Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
       rel="stylesheet"
-  />
+    />
 
-  <!-- Icon Font Stylesheet -->
-  <link
+    <!-- Icon Font Stylesheet -->
+    <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
       rel="stylesheet"
-  />
-  <link
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
       rel="stylesheet"
-  />
+    />
 
-  <!-- Libraries Stylesheet -->
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-  <!-- Customized Bootstrap Stylesheet -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Template Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
 
-  <!-- Open Graph Meta Tags (For Social Sharing) -->
-  <meta property="og:title" content="DIHA'S - Blog" />
-  <meta
+    <!-- Open Graph Meta Tags (For Social Sharing) -->
+    <meta property="og:title" content="DIHA'S - Blog" />
+    <meta
       property="og:description"
       content="DIHA'S - Développement Numérique et Marketing Digital. Consultez notre blog pour des articles sur le marketing digital, la transformation numérique, et les dernières innovations technologiques."
-  />
-  <meta property="og:image" content="img/logodihas.png" />
-  <meta property="og:url" content="https://dihas.vercel.app/blog" />
+    />
+    <meta property="og:image" content="img/logodihas.png" />
+    <meta property="og:url" content="https://dihas.vercel.app/blog" />
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:title" content="DIHA'S - Blog" />
-  <meta
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:title" content="DIHA'S - Blog" />
+    <meta
       name="twitter:description"
       content="DIHA'S - Développement Numérique et Marketing Digital. Le blog de DIHA'S vous propose des articles intéressants sur le marketing digital, la transformation numérique, et l'innovation technologique."
-  />
-  <meta name="twitter:image" content="img/logodihas.png" />
-  <meta name="twitter:card" content="summary_large_image" />
+    />
+    <meta name="twitter:image" content="img/logodihas.png" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Structured Data (JSON-LD) for SEO -->
-  <script type="application/ld+json">
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
       {
-          "@context": "https://schema.org",
-          "@type": "Blog",
-          "name": "DIHA'S - Blog",
-          "url": "https://dihas.vercel.app/blog",
-          "logo": "https://dihas.vercel.app/img/logodihas.png",
-          "description": "DIHA'S - Développement Numérique et Marketing Digital. Le blog de DIHA'S propose des articles sur le marketing digital, la transformation numérique et l'innovation technologique.",
-          "mainEntityOfPage": "https://dihas.vercel.app/blog",
-          "publisher": {
-              "@type": "Organization",
-              "name": "DIHA'S",
-              "logo": {
-                  "@type": "ImageObject",
-                  "url": "https://dihas.vercel.app/img/logodihas.png"
-              }
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "DIHA'S - Blog",
+        "url": "https://dihas.vercel.app/blog",
+        "logo": "https://dihas.vercel.app/img/logodihas.png",
+        "description": "DIHA'S - Développement Numérique et Marketing Digital. Le blog de DIHA'S propose des articles sur le marketing digital, la transformation numérique et l'innovation technologique.",
+        "mainEntityOfPage": "https://dihas.vercel.app/blog",
+        "publisher": {
+          "@type": "Organization",
+          "name": "DIHA'S",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://dihas.vercel.app/img/logodihas.png"
           }
+        }
       }
-  </script>
-</head>
+    </script>
 
-<body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-24GGENW748"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-24GGENW748");
+    </script>
+  </head>
+
+  <body>
     <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow textpri spinner-size" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div class="spinner-grow textpri spinner-size" role="status">
+          <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
+      </div>
+      <!-- Spinner End -->
 
+      <!-- Navbar & Hero Start -->
+      <div class="container-xxl position-relative p-0">
+        <div id="header" data-include="header.html"></div>
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
-            
-            <div id="header" data-include="header.html"></div>
-
-            <div class="container-xxl py-5 bg-primary hero-header">
-                <div class="container my-5 py-5 px-lg-5">
-                    <div class="row g-5 py-5">
-                        <div class="col-12 text-center">
-                            <h1 class="textor animated slideInDown">Blog</h1>
-                            <hr class="bg-white mx-auto mt-0 hr-size">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Blog</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Navbar & Hero End -->
-
-        <!-- Blog Start -->
-
-        <div class="container-xxl py-5">
-          <div class="container py-5 px-lg-5">
-            <div class="wow fadeInUp" data-wow-delay="0.1s">
-              <p class="section-title text-secondary justify-content-center">
-                <span></span>Nos Blogs<span></span>
-              </p>
-              <h1 class="text-center mb-5">
-                Découvrez Nos Articles sur le Marketing Digital, les Solutions
-                Numériques et Plus
-              </h1>
-            </div>
-  
-            <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="container-xxl py-5 bg-primary hero-header">
+          <div class="container my-5 py-5 px-lg-5">
+            <div class="row g-5 py-5">
               <div class="col-12 text-center">
-                <ul class="list-inline mb-5" id="portfolio-flters">
-                  <li class="mx-2 active" data-filter="*">Tous les blogs</li>
-                  <li class="mx-2" data-filter=".market-trends">
-                    Tendances du Marché
-                  </li>
-                  <li class="mx-2" data-filter=".digital-marketing">
-                    Stratégies Marketing Digital
-                  </li>
-                  <li class="mx-2" data-filter=".content-creation">
-                    Création de Contenu et SEO
-                  </li>
-                  <li class="mx-2" data-filter=".social-media">
-                    Médias Sociaux et Publicité
-                  </li>
-                  <li class="mx-2" data-filter=".tech-solutions">
-                    Solutions Techniques
-                  </li>
-                  <li class="mx-2" data-filter=".analytics">Analyses et Data</li>
-                </ul>
-              </div>
-            </div>
-  
-            <div class="row g-4 portfolio-container">
-              <!-- Tendances du Marché -->
-              <div
-                class="col-lg-4 col-md-6 portfolio-item market-trends wow fadeInUp"
-                data-wow-delay="0.1s"
-              >
-                <a href="blog-tendance-marche.html">
-                  <div class="rounded overflow-hidden">
-                    <div class="position-relative overflow-hidden">
-                      <img
-                        class="img-fluid w-100"
-                        src="img/blog-market-trends.png"
-                        alt="Tendances du Marché"
-                      />
-                    </div>
-                    <div class="bg-light p-4">
-                      <p class="textpri fw-medium mb-2">Tendances du Marché</p>
-                      <h5 class="lh-base mb-0">
-                        Prévisions et Innovations dans le Secteur Numérique
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-  
-              <!-- Stratégies Marketing Digital -->
-              <div
-                class="col-lg-4 col-md-6 portfolio-item digital-marketing wow fadeInUp"
-                data-wow-delay="0.3s"
-              >
-                <a href="blog-marketing-digital.html">
-                  <div class="rounded overflow-hidden">
-                    <div class="position-relative overflow-hidden">
-                      <img
-                        class="img-fluid w-100"
-                        src="img/blog-digital-marketing.png"
-                        alt="Marketing Digital"
-                      />
-                    </div>
-                    <div class="bg-light p-4">
-                      <p class="textpri fw-medium mb-2">
-                        Stratégies Marketing Digital
-                      </p>
-                      <h5 class="lh-base mb-0">
-                        Les Meilleures Pratiques pour une Stratégie Réussie
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-  
-              <!-- Création de Contenu et SEO -->
-              <div
-                class="col-lg-4 col-md-6 portfolio-item content-creation wow fadeInUp"
-                data-wow-delay="0.5s"
-              >
-                <a href="blog-contenu-seo.html">
-                  <div class="rounded overflow-hidden">
-                    <div class="position-relative overflow-hidden">
-                      <img
-                        class="img-fluid w-100"
-                        src="img/blog-content-creation.png"
-                        alt="Création de Contenu"
-                      />
-                    </div>
-                    <div class="bg-light p-4">
-                      <p class="textpri fw-medium mb-2">
-                        Création de Contenu et SEO
-                      </p>
-                      <h5 class="lh-base mb-0">
-                        Optimiser votre Contenu pour le Référencement Naturel
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-  
-              <!-- Médias Sociaux et Publicité -->
-              <div
-                class="col-lg-4 col-md-6 portfolio-item social-media wow fadeInUp"
-                data-wow-delay="0.7s"
-              >
-                <a href="blog-media-publicite.html">
-                  <div class="rounded overflow-hidden">
-                    <div class="position-relative overflow-hidden">
-                      <img
-                        class="img-fluid w-100"
-                        src="img/blog-social-media.png"
-                        alt="Médias Sociaux"
-                      />
-                    </div>
-                    <div class="bg-light p-4">
-                      <p class="textpri fw-medium mb-2">
-                        Médias Sociaux et Publicité
-                      </p>
-                      <h5 class="lh-base mb-0">
-                        Engager votre Audience sur les Réseaux Sociaux
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-  
-              <!-- Solutions Techniques -->
-              <div
-                class="col-lg-4 col-md-6 portfolio-item tech-solutions wow fadeInUp"
-                data-wow-delay="0.9s"
-              >
-                <a href="blog-solution-technique.html">
-                  <div class="rounded overflow-hidden">
-                    <div class="position-relative overflow-hidden">
-                      <img
-                        class="img-fluid w-100"
-                        src="img/blog-tech-solutions.png"
-                        alt="Solutions Techniques"
-                      />
-                    </div>
-                    <div class="bg-light p-4">
-                      <p class="textpri fw-medium mb-2">Solutions Techniques</p>
-                      <h5 class="lh-base mb-0">
-                        Solutions Innovantes pour vos Défis Techniques
-                      </h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-  
-              <!-- Analyses et Data -->
-              <div
-                class="col-lg-4 col-md-6 portfolio-item analytics wow fadeInUp"
-                data-wow-delay="1.1s"
-              >
-                <a href="blog-analyse-data.html">
-                  <div class="rounded overflow-hidden">
-                    <div class="position-relative overflow-hidden">
-                      <img
-                        class="img-fluid w-100"
-                        src="img/blog-analytics.png"
-                        alt="Analyses et Data"
-                      />
-                    </div>
-                    <div class="bg-light p-4">
-                      <p class="textpri fw-medium mb-2">Analyses et Data</p>
-                      <h5 class="lh-base mb-0">
-                        Utiliser les Données pour Décisions Stratégiques
-                      </h5>
-                    </div>
-                  </div>
-                </a>
+                <h1 class="textor animated slideInDown">Blog</h1>
+                <hr class="bg-white mx-auto mt-0 hr-size" />
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item">
+                      <a class="text-white" href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a class="text-white" href="#">Pages</a>
+                    </li>
+                    <li
+                      class="breadcrumb-item text-white active"
+                      aria-current="page"
+                    >
+                      Blog
+                    </li>
+                  </ol>
+                </nav>
               </div>
             </div>
           </div>
         </div>
-        
+      </div>
+      <!-- Navbar & Hero End -->
 
-        <!-- Footer Start -->
-        <div id="footer" data-include="footer.html"></div>
-        <!-- Footer End -->
+      <!-- Blog Start -->
 
+      <div class="container-xxl py-5">
+        <div class="container py-5 px-lg-5">
+          <div class="wow fadeInUp" data-wow-delay="0.1s">
+            <p class="section-title text-secondary justify-content-center">
+              <span></span>Nos Blogs<span></span>
+            </p>
+            <h1 class="text-center mb-5">
+              Découvrez Nos Articles sur le Marketing Digital, les Solutions
+              Numériques et Plus
+            </h1>
+          </div>
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top" title="lk"><i class="bi bi-arrow-up text-white"></i></a>
+          <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-12 text-center">
+              <ul class="list-inline mb-5" id="portfolio-flters">
+                <li class="mx-2 active" data-filter="*">Tous les blogs</li>
+                <li class="mx-2" data-filter=".market-trends">
+                  Tendances du Marché
+                </li>
+                <li class="mx-2" data-filter=".digital-marketing">
+                  Stratégies Marketing Digital
+                </li>
+                <li class="mx-2" data-filter=".content-creation">
+                  Création de Contenu et SEO
+                </li>
+                <li class="mx-2" data-filter=".social-media">
+                  Médias Sociaux et Publicité
+                </li>
+                <li class="mx-2" data-filter=".tech-solutions">
+                  Solutions Techniques
+                </li>
+                <li class="mx-2" data-filter=".analytics">Analyses et Data</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row g-4 portfolio-container">
+            <!-- Tendances du Marché -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item market-trends wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
+              <a href="blog-tendance-marche.html">
+                <div class="rounded overflow-hidden">
+                  <div class="position-relative overflow-hidden">
+                    <img
+                      class="img-fluid w-100"
+                      src="img/blog-market-trends.png"
+                      alt="Tendances du Marché"
+                    />
+                  </div>
+                  <div class="bg-light p-4">
+                    <p class="textpri fw-medium mb-2">Tendances du Marché</p>
+                    <h5 class="lh-base mb-0">
+                      Prévisions et Innovations dans le Secteur Numérique
+                    </h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Stratégies Marketing Digital -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item digital-marketing wow fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <a href="blog-marketing-digital.html">
+                <div class="rounded overflow-hidden">
+                  <div class="position-relative overflow-hidden">
+                    <img
+                      class="img-fluid w-100"
+                      src="img/blog-digital-marketing.png"
+                      alt="Marketing Digital"
+                    />
+                  </div>
+                  <div class="bg-light p-4">
+                    <p class="textpri fw-medium mb-2">
+                      Stratégies Marketing Digital
+                    </p>
+                    <h5 class="lh-base mb-0">
+                      Les Meilleures Pratiques pour une Stratégie Réussie
+                    </h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Création de Contenu et SEO -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item content-creation wow fadeInUp"
+              data-wow-delay="0.5s"
+            >
+              <a href="blog-contenu-seo.html">
+                <div class="rounded overflow-hidden">
+                  <div class="position-relative overflow-hidden">
+                    <img
+                      class="img-fluid w-100"
+                      src="img/blog-content-creation.png"
+                      alt="Création de Contenu"
+                    />
+                  </div>
+                  <div class="bg-light p-4">
+                    <p class="textpri fw-medium mb-2">
+                      Création de Contenu et SEO
+                    </p>
+                    <h5 class="lh-base mb-0">
+                      Optimiser votre Contenu pour le Référencement Naturel
+                    </h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Médias Sociaux et Publicité -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item social-media wow fadeInUp"
+              data-wow-delay="0.7s"
+            >
+              <a href="blog-media-publicite.html">
+                <div class="rounded overflow-hidden">
+                  <div class="position-relative overflow-hidden">
+                    <img
+                      class="img-fluid w-100"
+                      src="img/blog-social-media.png"
+                      alt="Médias Sociaux"
+                    />
+                  </div>
+                  <div class="bg-light p-4">
+                    <p class="textpri fw-medium mb-2">
+                      Médias Sociaux et Publicité
+                    </p>
+                    <h5 class="lh-base mb-0">
+                      Engager votre Audience sur les Réseaux Sociaux
+                    </h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Solutions Techniques -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item tech-solutions wow fadeInUp"
+              data-wow-delay="0.9s"
+            >
+              <a href="blog-solution-technique.html">
+                <div class="rounded overflow-hidden">
+                  <div class="position-relative overflow-hidden">
+                    <img
+                      class="img-fluid w-100"
+                      src="img/blog-tech-solutions.png"
+                      alt="Solutions Techniques"
+                    />
+                  </div>
+                  <div class="bg-light p-4">
+                    <p class="textpri fw-medium mb-2">Solutions Techniques</p>
+                    <h5 class="lh-base mb-0">
+                      Solutions Innovantes pour vos Défis Techniques
+                    </h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Analyses et Data -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item analytics wow fadeInUp"
+              data-wow-delay="1.1s"
+            >
+              <a href="blog-analyse-data.html">
+                <div class="rounded overflow-hidden">
+                  <div class="position-relative overflow-hidden">
+                    <img
+                      class="img-fluid w-100"
+                      src="img/blog-analytics.png"
+                      alt="Analyses et Data"
+                    />
+                  </div>
+                  <div class="bg-light p-4">
+                    <p class="textpri fw-medium mb-2">Analyses et Data</p>
+                    <h5 class="lh-base mb-0">
+                      Utiliser les Données pour Décisions Stratégiques
+                    </h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Start -->
+      <div id="footer" data-include="footer.html"></div>
+      <!-- Footer End -->
+
+      <!-- Back to Top -->
+      <a
+        href="#"
+        class="btn btn-lg btn-secondary btn-lg-square back-to-top"
+        title="lk"
+        ><i class="bi bi-arrow-up text-white"></i
+      ></a>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -337,6 +364,5 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
